@@ -75,7 +75,7 @@ weight = 4
 
 ### Homepage settings
 
-* description: description will be displayed in the homepage.
+* description: description will be displayed in the homepage. Markdown syntax is supported in the description string.
 ```toml
 [params]
 
@@ -87,6 +87,13 @@ weight = 4
 ```toml
 [params]
   mainSection = "posts"
+```
+
+* change the default main section title from Writings, to something else:
+
+```toml
+[params]
+  mainSectionTitle = "Blog"
 ```
 
 * Show only the 5 most recent posts (default)
@@ -104,7 +111,7 @@ weight = 4
   postsOnHomePage = 5 # this option will be ignored
 ```
 
-* show tagsoverview (defalut) or not
+* show tagsoverview (default) or not
 * 
 ```toml
 [params]
